@@ -1,0 +1,23 @@
+/* styles.scss */
+
+// 1. USWDS settings
+// https://designsystem.digital.gov/documentation/settings/#general-settings-2
+@use "uswds-core" with (
+  $theme-show-compile-warnings: true,
+  $theme-show-notifications: false,
+  $theme-banner-background-color: "ink",
+  $theme-banner-link-color: "primary-light",
+  $theme-banner-max-width: "widescreen",
+  $theme-checkbox-border-radius: "md",
+  $theme-font-path: "uswds/fonts",
+  $theme-image-path: "uswds/img",
+  $theme-hero-image: "uswds/img/hero.webp"
+);
+
+// 2. USWDS source code
+@forward "uswds";
+
+// 3. custom SCSS
+body {
+  font-size: 18px;
+}
