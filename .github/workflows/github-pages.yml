@@ -1,6 +1,6 @@
 # modified from:
 # https://github.com/actions/starter-workflows/blob/main/pages/nextjs.yml
-name: Deploy Next.js site to Pages
+name: Deploy site to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
