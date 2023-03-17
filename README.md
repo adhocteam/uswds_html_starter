@@ -20,6 +20,11 @@ To see the site locally, run `npm watch`, and npm will start up a web server and
 sass set to watch the `src/styles.scss` file for changes and recompile when it
 finds them. Visit `http://127.0.0.1:8080` to see your site in action.
 
+- To edit the CSS for the site, change `src/styles.scss`
+- To edit the HTML for the page, change `src/index.html`
+
+That's all there is!
+
 ## Accessibility
 
 On every push, the [CI job](.github/workflows/ci.yml):
