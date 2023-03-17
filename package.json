@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass -I node_modules/@uswds/uswds/packages src/styles.scss src/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "concurrently \"sass -I node_modules/@uswds/uswds/packages --watch src/styles.scss src/styles.css\" \"http-server src -a 127.0.0.1 -o\"",
+    "serve": "http-server src -a 127.0.0.1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@uswds/uswds": "^3.4.1"
+    "@uswds/uswds": "^3.4.1",
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
   }
 }
