@@ -1,0 +1,13 @@
+ci:
+  collect:
+    numberOfRuns: 1
+    # skip the performance check because we're running against the dev server.
+    # Also we don't care about SEO here
+    onlyCategories:
+      - accessibility
+      - best-practices
+  assert:
+    assertions:
+      categories:accessibility:
+        - error
+        - minScore: 1
