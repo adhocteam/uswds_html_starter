@@ -1,6 +1,5 @@
 node_modules
-.next
-out
 .envrc
 .DS_Store
-result
+src/styles.css
+src/styles.css.map
