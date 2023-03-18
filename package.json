@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass -I node_modules/@uswds/uswds/packages src/styles.scss src/styles.css",
+    "build": "sass -I node_modules/@uswds/uswds/packages src/styles.scss src/styles.full.css && postcss src/styles.full.css -o src/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "concurrently \"sass -I node_modules/@uswds/uswds/packages --watch src/styles.scss src/styles.css\" \"http-server src -a 127.0.0.1 -o\"",
     "serve": "http-server src -a 127.0.0.1"
