@@ -1,6 +1,6 @@
 node_modules
 .envrc
 .DS_Store
-src/styles.css
-src/styles.css.map
+src/*.css
+src/*.css.map
 NOTES

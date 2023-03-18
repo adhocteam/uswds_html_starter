@@ -36,6 +36,32 @@ On every push, the [CI job](.github/workflows/ci.yml):
 Check out [accessibility.digital.gov](https://accessibility.digital.gov) for
 good resources on why this is so important
 
+## Tasks
+
+The following tasks are defined in `package.json` and can be run with `npm run <task>`:
+
+- `build`: compile `src/styles.scss` into `src/styles.css`. Runs sass and then
+  postcss to minify the CSS.
+- `watch`: start an HTTP server on port 8080 and also a process that will run
+  `build` any time you change the sass file
+- `serve`: start an HTTP server on port 8080 serving the `src` directory
+
+## Tools
+
+This project uses the following tools:
+
+- [`concurrently`](https://github.com/open-cli-tools/concurrently) to run
+  `turbowatch` and `http-server` at the same time and properly handle logging
+  and shutdown
+- [`http-server`](https://github.com/http-party/http-server) to serve the
+  static files in the `src` directory
+- [`postcss`](https://postcss.org) to minify the CSS via
+  [`cssnano`](https://cssnano.co)
+- [`purgecss`](https://purgecss.com) to remove unused CSS from the CSS file
+- [`sass`](http://sass-lang.com) to compile the USWDS sass to CSS
+- [`turbowatch`](https://github.com/gajus/turbowatch/) to trigger the CSS build
+  on a file change
+
 ## Contributing
 
 This repo accepts contributions! Just file a PR.
