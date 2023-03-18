@@ -12,9 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@uswds/uswds": "^3.4.1",
     "concurrently": "^7.6.0",
+    "cssnano": "^5.1.15",
     "http-server": "^14.1.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^8.0.1",
+    "purgecss": "^5.0.0",
     "sass": "^1.59.3"
   }
 }
