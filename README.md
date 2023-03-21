@@ -16,7 +16,7 @@ This repository deploys to GitHub pages on every push to the main branch, via
 
 First, run `npm install`.
 
-To see the site locally, run `npm watch`, and npm will start up a web server and
+To see the site locally, execute `npm run watch`, and npm will start up a web server and
 sass set to watch the `src/styles.scss` file for changes and recompile when it
 finds them. Visit `http://127.0.0.1:8080` to see your site in action.
 
