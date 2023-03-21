@@ -1,7 +1,7 @@
 {
   "name": "uswds_html_starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get started easily with an HTML page using the US Web Design System",
   "main": "index.js",
   "scripts": {
     "build": "sass -I node_modules/@uswds/uswds/packages src/styles.scss src/styles.full.css && postcss src/styles.full.css -o src/styles.css",
